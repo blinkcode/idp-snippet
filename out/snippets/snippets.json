@@ -1,0 +1,38 @@
+{
+    "idp domReady快捷键": {
+		"scope": "javascript,typescript",
+		"prefix": "idpdomready",
+        "description": "idp domReady快捷键",
+		"body": "idp.event.bind('domReady', function() {\r\n\t$0\r\n});"
+	},
+    "idp viewReady快捷键": {
+		"scope": "javascript,typescript",
+		"prefix": "idpviewready",
+        "description": "idp viewReady快捷键",
+		"body": "idp.event.bind('viewReady', function() {\r\n\t$0\r\n});"
+	},
+
+    "idp loadData快捷键": {
+		"scope": "javascript,typescript",
+		"prefix": "idploaddata",
+        "description": "idp loadData快捷键",
+		"body": "idp.event.bind('loadData', function() {\r\n\t$0\r\n});"
+	},
+
+    "idp注册事件通用方法": {
+        "scope": "javascript,typescript",
+		"prefix": "idpregistor",
+        "description": "idp 注册事件通用方法",
+		"body": "idp.event.register(\"${grid_main}\", \"${method}\", function(${param}) {\r\n\t$0\r\n});"
+    },
+
+    "idp注册表格筛选前": {
+        "scope": "javascript,typescript",
+		"prefix": "idpregistorgridfilter",
+        "description": "idp 注册事件通用方法",
+        "body": "idp.event.register(\"${grid_main}\", \"beforeGridFilter\", function(e, filters) {\r\n\t$0\r\n});"
+    }
+
+
+
+}
