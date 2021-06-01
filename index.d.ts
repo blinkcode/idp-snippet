@@ -4,7 +4,7 @@ declare namespace idp {
      */
 	const version: string;
     /**
-     * 视图测试
+     * 
      */
     namespace uiview {
         namespace control {
