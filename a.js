@@ -1,3 +1,5 @@
+
+
 var scmbatchcard = {
     isCopy: false,
     copyRow: null,
