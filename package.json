@@ -1,12 +1,13 @@
 {
-	"name": "idp",
-	"displayName": "idp",
-	"description": "",
+	"name": "idp-snippets",
+	"displayName": "IDP-Snippets",
+	"description": "IDP的代码提示插件",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.56.0"
 	},
-	"publisher": "SCM",
+	"icon": "https://github.com/popingblink/idp-snippet/master/image/idp.logo.jpg",
+	"publisher": "blink",
 	"categories": [
 		"Snippets"
 	],
