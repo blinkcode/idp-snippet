@@ -1,6 +1,7 @@
 # IDP 代码提示
 
-![image](https://github.com/popingblink/idp-snippet/master/idp.logo.jpg)
+ ![image](https://github.com/popingblink/idp-snippet/blob/master/images/idp.logo.jpg)
+
 
 IDP采用原生js, 对于已经用惯了TypeScript开发的来说，没有代码提示需要查阅大量文档和源码，对开发不是很友好。
 所以，所以这套代码提示应运而生。
@@ -8,9 +9,9 @@ IDP采用原生js, 对于已经用惯了TypeScript开发的来说，没有代码
 
 - 该提示目前能涵盖开发过程中使用的大部分变量和方法， 实现代码的快速编写
 
-![image](https://github.com/popingblink/idp-snippet/master/idp.logo.jpg)
+![image](https://github.com/popingblink/idp-snippet/blob/master/images/snippets.gif)
 
-> 如果你想更快，我还提供了IDP的代码片段，更敏捷的开发，从此不再查询文档! [idp-vscode扩展插件](https://baidu.com);
+> 如果你想更快，我还提供了IDP的声明文件，更敏捷的开发，从此不再查询文档! [idp](https://baidu.com);
 
 ## 不足
 - 本提示中只会包含常用变量和方法，可能会存在遗漏，如果您发现有需要添加的，请帮我提交PR

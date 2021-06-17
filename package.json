@@ -6,8 +6,9 @@
 	"engines": {
 		"vscode": "^1.56.0"
 	},
-	"icon": "https://github.com/popingblink/idp-snippet/master/image/idp.logo.jpg",
+	"icon": "images/idp.logo.jpg",
 	"publisher": "blink",
+	"repository": "https://github.com/popingblink/idp-snippet",
 	"categories": [
 		"Snippets"
 	],
