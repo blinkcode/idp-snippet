@@ -1,70 +1,15 @@
-# idp README
+# IDP 代码提示
 
-This is the README for your extension "idp". After writing up a brief description, we recommend including the following sections.
 
-## Features
+IDP采用原生js, 对于已经用惯了TypeScript开发的来说，没有代码提示需要查阅大量文档和源码，对开发不是很友好。
+所以，所以这套代码提示应运而生。
+## 特性
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- 该提示目前能涵盖开发过程中使用的大部分变量和方法， 实现代码的快速编写
 
-For example if there is an image subfolder under your extension project workspace:
+> 如果你想更快，我还提供了IDP的代码片段，更敏捷的开发，从此不再查询文档! (https://baidu.com)[idp-vscode扩展插件];
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## 不足
+- 本提示中只会包含常用变量和方法，可能会存在遗漏，如果您发现有需要添加的，请帮我提交PR
+- IDP在源码书写中无法判断是内部使用方法，还是对外暴露的方法，有些内部方法可能也会被暴露出来，
+    本提示不对方法是否有效负责。如有疑问请联系IDP的开发人员。如确定为内部方法，也可为我提交PR，联系我删除即可
