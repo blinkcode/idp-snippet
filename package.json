@@ -6,7 +6,7 @@
 	"engines": {
 		"vscode": "^1.56.0"
 	},
-	"icon": "images/idp.logo.jpg",
+	"icon": "assets/idp.logo.jpg",
 	"publisher": "blink",
 	"repository": "https://github.com/popingblink/idp-snippet",
 	"categories": [
