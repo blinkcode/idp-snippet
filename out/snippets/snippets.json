@@ -1,58 +1,57 @@
 {
-    "idp domReady快捷键": {
+    "idpDomReady": {
         "scope": "javascript,typescript",
         "prefix": "idpDomReady",
         "description": "idp domReady快捷键",
-        "body": "idp.event.bind('domReady', function() {\r\n\t$1\r\n});"
+        "body": "idp.event.bind('domReady', function() {\r\n\t$0\r\n});"
     },
-    "idp viewReady快捷键": {
+    "idpViewReady": {
         "scope": "javascript,typescript",
         "prefix": "idpViewReady",
         "description": "idp viewReady快捷键",
-        "body": "idp.event.bind('viewReady', function() {\r\n\t$1\r\n});"
+        "body": "idp.event.bind('viewReady', function() {\r\n\t$0\r\n});"
     },
     "idp loadData快捷键": {
         "scope": "javascript,typescript",
         "prefix": "idpLoadData",
         "description": "idp loadData快捷键",
-        "body": "idp.event.bind('loadData', function() {\r\n\t$1\r\n});"
+        "body": "idp.event.bind('loadData', function() {\r\n\t$0\r\n});"
     },
     "idp注册事件通用方法": {
         "scope": "javascript,typescript",
         "prefix": "idpRegistor",
         "description": "idp 注册事件通用方法",
-        "body": "idp.event.register(\"${1:grid_main}\", \"${2:method}\", function(${3:param}) {\r\n\t$4\r\n});"
+        "body": "idp.event.register(\"${1:grid_main}\", \"${2:method}\", function(${3:param}) {\r\n\t$0\r\n});"
     },
-    ,
     "idp监听帮助打开前": {
         "scope": "javascript,typescript",
         "prefix": "idpHelpBeforeOpen",
         "description": "idp 监听帮助打开前",
-        "body": "idp.event.register(\"${1:helpID}\", \"beforeOpen\", function() {\r\n\t$2\r\n});"
+        "body": "idp.event.register(\"${1:helpID}\", \"beforeOpen\", function() {\r\n\t$0\r\n});"
     },
     "idp监听帮助选择后": {
         "scope": "javascript,typescript",
         "prefix": "idpHelpSelected",
         "description": "idp 监听帮助打开前",
-        "body": "idp.event.register(\"${1:helpID}\", \"selected\", function(e, lookup, lookupWindow, selected) {\r\n\t$2\r\n});"
+        "body": "idp.event.register(\"${1:helpID}\", \"selected\", function(e, lookup, lookupWindow, selected) {\r\n\t$0\r\n});"
     },
     "idp监听表格筛选前": {
         "scope": "javascript,typescript",
         "prefix": "idpGridfilter",
         "description": "idp 监听表格筛选前, 可修改表头筛选条件",
-        "body": "idp.event.register(\"${1:grid_main}\", \"beforeGridFilter\", function(e, filters) {\r\n\t$2\r\n});"
+        "body": "idp.event.register(\"${1:grid_main}\", \"beforeGridFilter\", function(e, filters) {\r\n\t$0\r\n});"
     },
     "idp监听表格初始化": {
         "scope": "javascript,typescript",
         "prefix": "idpGridinit",
         "description": "idp 监听表格初始化",
-        "body": "idp.event.register(\"${1:grid_main}\", \"beforeGridInit\", function(e, filters) {\r\n\t$2\r\n});"
+        "body": "idp.event.register(\"${1:grid_main}\", \"beforeGridInit\", function(e, filters) {\r\n\t$0\r\n});"
     },
     "idp监听表格选中行": {
         "scope": "javascript,typescript",
         "prefix": "idpGridSelectRow",
         "description": "idp 监听表格选中行",
-        "body": "idp.event.register(\"${1:grid_main}\", \"selectRow\", function(e, row) {\r\n\t$2\r\n});"
+        "body": "idp.event.register(\"${1:grid_main}\", \"selectRow\", function(e, row) {\r\n\t$0\r\n});"
     },
     "idp监听表格选中行之前": {
         "scope": "javascript,typescript",
@@ -60,7 +59,7 @@
         "description": "idp 监听表格选中行之前, 如果 return false, 可阻止选中",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"beforeSelectRow\", function(e, rowData, rowId, element) {",
-            "\t$2",
+            "\t$0",
             "});"
         ]
     },
@@ -68,13 +67,13 @@
         "scope": "javascript,typescript",
         "prefix": "idpGridCheckRow",
         "description": "idp 监听表格选中行",
-        "body": "idp.event.register(\"${1:grid_main}\", \"checkRow\", function(e, data, id, row) {\r\n\t$2\r\n});"
+        "body": "idp.event.register(\"${1:grid_main}\", \"checkRow\", function(e, data, id, row) {\r\n\t$0\r\n});"
     },
     "idp监听表格勾选行之前": {
         "scope": "javascript,typescript",
         "prefix": "idpGridBeforeCheckRow",
         "description": "idp 监听表格勾选行之前, 如果return false，可阻止勾选",
-        "body": "idp.event.register(\"${1:grid_main}\", \"beforeCheckRow\", function(e, data, id, row) {\r\n\t$2\r\n});"
+        "body": "idp.event.register(\"${1:grid_main}\", \"beforeCheckRow\", function(e, data, id, row) {\r\n\t$0\r\n});"
     },
     "idp监听表格创建编辑器之前": {
         "scope": "javascript,typescript",
@@ -86,7 +85,7 @@
         "scope": "javascript,typescript",
         "prefix": "idpGriddblClick",
         "description": "grid 双击选中事件",
-        "body": "idp.event.register(\"${1:grid_main}\", \"dblClickRow\", function(e, rowData, rowId, element) {\r\n\t$2\r\n});"
+        "body": "idp.event.register(\"${1:grid_main}\", \"dblClickRow\", function(e, rowData, rowId, element) {\r\n\t$0\r\n});"
     },
     "idp监听表格展示数据后事件": {
         "scope": "javascript,typescript",
@@ -105,7 +104,7 @@
         "description": "监听表格新增前事件，不能阻止新增行，但是可以给新增的行数据添加一些默认值",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"beforeAddGridRow\", function(e, a, newRow, gridId) {",
-            "\t$2",
+            "\t$0",
             "});"
         ]
     },
@@ -115,7 +114,7 @@
         "description": "监听表格新增后事件",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"afterAddGridRow\", function(e, a, newRow, gridId) {",
-            "\t$2",
+            "\t$0",
             "});"
         ]
     },
@@ -125,7 +124,7 @@
         "description": "监听表格删除前事件（亲测无效）",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"beforeDeleteGridRow\", function() {",
-            "\t$2",
+            "\t$0",
             "});"
         ]
     },
@@ -135,7 +134,7 @@
         "description": "监听表格删除后事件（亲测无效）",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"afterDeleteGridRow\", function() {",
-            "\t$2",
+            "\t$0",
             "});"
         ]
     },
@@ -145,7 +144,7 @@
         "description": "监听表格编辑前(亲测无效)",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"beginEdit\", function() {",
-            "\t$2",
+            "\t$0",
             "});"
         ]
     },
@@ -155,7 +154,7 @@
         "description": "监听表格编辑前(亲测无效)",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"beforeEdit\", function() {",
-            "\t$2",
+            "\t$0",
             "});"
         ]
     },
@@ -165,7 +164,7 @@
         "description": "监听表格结束编辑前(亲测无效)",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"beforeEndEdit\", function(e, a, newRow, gridId) {",
-            "\t$2",
+            "\t$0",
             "});"
         ]
     },
@@ -175,7 +174,7 @@
         "description": "监听表格结束编辑前(亲测无效)",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"afterEndEdit\", function(e, a, newRow, gridId) {",
-            "\t$2",
+            "\t$0",
             "});"
         ]
     },
@@ -185,7 +184,7 @@
         "description": "监听表格结束编辑前(亲测无效)",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"afterEdit\", function(e, a, newRow, gridId) {",
-            "\t$2",
+            "\t$0",
             "});"
         ]
     },
@@ -195,7 +194,7 @@
         "description": "监听表格全选",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"checkAllRow\", function(e, checkAllFlag, a, checkedRows) {",
-            "\t$2",
+            "\t$0",
             "});"
         ]
     },
@@ -205,7 +204,7 @@
         "description": "add/addData/addSame/addDown的时候会触发",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"beforeAddData\", function(e, newRow) {",
-            "\t$2",
+            "\t$0",
             "});"
         ]
     },
@@ -215,7 +214,7 @@
         "description": "idp监听单选复选选中",
         "body": [
             "idp.event.register(\"${1:id}\", \"selected\", function(e, id) {",
-            "\t$2",
+            "\t$0",
             "});"
         ]
     },
@@ -225,7 +224,7 @@
         "description": "idp日期改变,没啥用，回调里面，没有返回选中日期",
         "body": [
             "idp.event.register(\"${1:id}\", \"modify\", function() {",
-            "\t$2",
+            "\t$0",
             "});"
         ]
     },
