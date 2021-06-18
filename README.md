@@ -26,36 +26,32 @@ IDP采用原生js, 对于已经用惯了TypeScript开发的来说，没有代码
 | 代码片段                      | 使用效果                                                              |
 | ---------------------------- | -------------------------------------------------------------------- |
 | `idpdomready`                | domready                                                             |
-| `idpviewready`               | viewready                                       |
-| `a-component-root`           | root app component                                                   |
-| `a-ctor-skip-self`           | angular `NgModule`'s `skipself` constructor                          |
-| `a-directive`                | directive                                                            |
-| `a-guard-can-activate`       | `CanActivate` guard                                                  |
-| `a-guard-can-activate-child` | `CanActivateChild` guard                                             |
-| `a-guard-can-deactivate`     | `CanDeactivate` guard                                                |
-| `a-guard-can-load`           | `CanLoad` guard                                                      |
-| `a-httpclient-get`           | `httpClient.get` with Rx Observable                                  |
-| `a-http-interceptor`         | Empty Angular `HttpInterceptor` for `HttpClient`                     |
-| `a-http-interceptor-headers` | Angular `HttpInterceptor` that sets headers for `HttpClient`         |
-| `a-http-interceptor-logging` | Angular `HttpInterceptor` that logs traffic for `HttpClient`         |
-| `a-module`                   | module                                                               |
-| `a-module-root`              | root app module                                                      |
-| `a-output-event`             | `@Output` event and emitter                                          |
-| `a-pipe`                     | pipe                                                                 |
-| `a-preload-opt-in-strategy`  | custom preload strategy that allows choosing which routes to preload |
-| `a-preload-network-strategy` | custom preload strategy that preloads based on network connectivity  |
-| `a-resolver`                 | resolver                                                             |
-| `a-routes`                   | Route definition file                                                |
-| `a-rxjs-import`              | import RxJs features                                                 |
-| `a-rxjs-operators`           | import RxJs operators                                                |
-| `a-route-path-404`           | 404 route path                                                       |
-| `a-route-path-default`       | default route path                                                   |
-| `a-route-path-with-children` | route path with children                                             |
-| `a-route-path-eager`         | eager route path                                                     |
-| `a-route-path-lazy`          | lazy route path                                                      |
-| `a-router-events`            | listen to one or more router events                                  |
-| `a-route-params-subscribe`   | subscribe to route parameters                                        |
-| `a-service`                  | service with injectable provided in root                             |
-| `a-service-httpclient`       | service with `HttpClient`                                            |
-| `a-subscribe`                | Rx Observable subscription                                           |
-| `a-trackby`                  | to create a trackby function in TypeScript for the `ngFor`           |
+| `idpviewready`               | viewready                                                            |
+| `idpLoadData`                | idp loadData快捷键                                                    |
+| `idpRegistor`                | idp 注册事件通用方法                                                    |
+| `idpHelpBeforeOpen`          | idp 监听帮助打开前                                                     |
+| `idpHelpSelected`            | idp 监听帮助打开前                                                     |
+| `idpGridfilter`              | idp 监听表格筛选前, 可修改表头筛选条件                                    |
+| `idpGridinit`                | idp 监听表格初始化                                                     |
+| `idpGridSelectRow`           | idp 监听表格选中行                                                     |
+| `idpGridBeforeSelectRow`     | idp监听表格选中行之前, 如果 return false,可阻止选中                       |
+| `idpGridCheckRow`            | idp 监听表格选中行                                                     |
+| `idpGridBeforeCheckRow`      | idp 监听表格勾选行之前, 如果return false，可阻止勾选                      |
+| `idpGridBeforeApplyEditor`   | 监听表格创建编辑器之前，可动态修改列编辑器的类型，修改帮助                    |
+| `idpGriddblClick`            | grid 双击选中事件                                                      |
+| `idpGridAfterShowData`       | 监听表格展示数据后事件                                                   |
+| `idpGridBeforeAddGridRow`    | 监听表格新增前事件，不能阻止新增行，但是可以给新增的行数据添加一些默认值         |
+| `idpGridAfterAddGridRow`     | 监听表格新增后事件                                                      |
+| `idpGridBeforeDeleteGridRow` | 监听表格删除前事件（亲测无效）                                            |
+| `idpGridAfterDeleteGridRow`  | 监听表格删除后事件（亲测无效）                                            |
+| `idpGridBeginEdit`           | 监听表格编辑前                                                         |
+| `idpGridBeforeEdit`          | 监听表格编辑前                                                         |
+| `idpGridBeforeBeginEdit`     | 监听表格结束编辑前                                                      |
+| `idpGridAfterEndEdit`        | 监听表格结束编辑后                                                      |
+| `idpGridafterEdit`           | 监听表格结束编辑后                                                      |
+| `idpGridCheckAllRow`         | 监听表格全选                                                           |
+| `idpGridBeforeAddData`       | add/addData/addSame/addDown的时候会触发                                |
+| `idpSelected`                | idp监听单选复选选中                                                     |
+| `idpDateModify`              | idp日期改变,没啥用，回调里面，没有返回选中日期                              |
+| `idpGridafterGridHelpSelected` | idp帮助选中后, 也可以给当前行赋值                                       |
+| `idpHelpBeforeHelpFilter`    | idp帮助筛选前，可以给帮助添加筛选条件                                      |

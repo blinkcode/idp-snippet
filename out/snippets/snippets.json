@@ -141,7 +141,7 @@
     "idp监听表格编辑前": {
         "scope": "javascript,typescript",
         "prefix": "idpGridBeginEdit",
-        "description": "监听表格编辑前(亲测无效)",
+        "description": "监听表格编辑前",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"beginEdit\", function() {",
             "\t$0",
@@ -151,7 +151,7 @@
     "idp监听表格编辑前2": {
         "scope": "javascript,typescript",
         "prefix": "idpGridBeforeEdit",
-        "description": "监听表格编辑前(亲测无效)",
+        "description": "监听表格编辑前",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"beforeEdit\", function() {",
             "\t$0",
@@ -161,7 +161,7 @@
     "idp监听表格结束编辑前": {
         "scope": "javascript,typescript",
         "prefix": "idpGridBeforeBeginEdit",
-        "description": "监听表格结束编辑前(亲测无效)",
+        "description": "监听表格结束编辑前",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"beforeEndEdit\", function(e, a, newRow, gridId) {",
             "\t$0",
@@ -171,7 +171,7 @@
     "idp监听表格结束编辑后": {
         "scope": "javascript,typescript",
         "prefix": "idpGridAfterEndEdit",
-        "description": "监听表格结束编辑前(亲测无效)",
+        "description": "监听表格结束编辑后",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"afterEndEdit\", function(e, a, newRow, gridId) {",
             "\t$0",
@@ -181,7 +181,7 @@
     "idp监听表格结束编辑": {
         "scope": "javascript,typescript",
         "prefix": "idpGridafterEdit",
-        "description": "监听表格结束编辑前(亲测无效)",
+        "description": "监听表格结束编辑后",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"afterEdit\", function(e, a, newRow, gridId) {",
             "\t$0",
@@ -200,7 +200,7 @@
     },
     "idp监听表格添加数据": {
         "scope": "javascript,typescript",
-        "prefix": "idpGridCheckAllRow",
+        "prefix": "idpGridBeforeAddData",
         "description": "add/addData/addSame/addDown的时候会触发",
         "body": [
             "idp.event.register(\"${1:grid_main}\", \"beforeAddData\", function(e, newRow) {",
