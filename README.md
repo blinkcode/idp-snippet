@@ -11,7 +11,7 @@ IDP采用原生js, 对于已经用惯了TypeScript开发的来说，没有代码
 
 ![image](https://raw.githubusercontent.com/popingblink/idp-snippet/master/assets/snippets.gif)
 
-> 如果你想更快，我还提供了IDP的声明文件，更敏捷的开发，从此不再查询文档! [idp声明文件](https://baidu.com);
+> 如果你想更快，我还提供了IDP的声明文件，更敏捷的开发，从此不再查询文档! [idp声明文件](https://www.npmjs.com/package/@types/idp);
 
 ## 不足
 - 本提示中只会包含常用变量和方法，可能会存在遗漏，如果您发现有需要添加的，请帮我提交PR
