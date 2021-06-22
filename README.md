@@ -22,6 +22,7 @@ IDP采用原生js, 对于已经用惯了TypeScript开发的来说，没有代码
 
 > idp所有代码提示都是以idp开头进行解析的
 
+> 监听类
 
 | 代码片段                      | 使用效果                                                              |
 | ---------------------------- | -------------------------------------------------------------------- |
@@ -55,3 +56,14 @@ IDP采用原生js, 对于已经用惯了TypeScript开发的来说，没有代码
 | `idpDateModify`              | idp日期改变,没啥用，回调里面，没有返回选中日期                              |
 | `idpGridafterGridHelpSelected` | idp帮助选中后, 也可以给当前行赋值                                       |
 | `idpHelpBeforeHelpFilter`    | idp帮助筛选前，可以给帮助添加筛选条件                                      |
+
+> 操作类
+
+| 代码片段                      | 使用效果                                                              |
+| ---------------------------- | -------------------------------------------------------------------- |
+| `idpUpdateCell`               | idp更新单元格                                                         |
+| `idpUpdateRow`                | idp更新行数据                                                         |
+| `idpSelectRow`                | idp选中行                                                             |
+| `idpUnSelect`                 | idp取消选中行                                                         |
+| `idpFetch`                    | idp请求API                                                            |
+| `idpSetValue`                 | idp设置值                                                             |
