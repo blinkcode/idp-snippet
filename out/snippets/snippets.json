@@ -257,5 +257,64 @@
             "\t});",
             "});"
         ]
+    },
+    "idp更新行": {
+        "scope": "javascript,typescript",
+        "prefix": "idpUpdateRow",
+        "description": "idp更新行数据",
+        "body": [
+            "idp.control.get(\"${1:grid_main}\").updateRow(${2:rowIndex}, { ${3:columnName}: '' });"
+        ]
+    },
+    "idp更新单元格": {
+        "scope": "javascript,typescript",
+        "prefix": "idpUpdateCell",
+        "description": "idp更新单元格",
+        "body": [
+            "idp.control.get(\"${1:grid_main}\").updateCell(${2:cloumnName}, ${3:value}, ${4:rowIndex});"
+        ]
+    },
+    "idp选中行": {
+        "scope": "javascript,typescript",
+        "prefix": "idpSelectRow",
+        "description": "idp选中行",
+        "body": [
+            "idp.control.get(\"${1:grid_main}\").select(${2:rowIndex});"
+        ]
+    },
+    "idp取消选中行": {
+        "scope": "javascript,typescript",
+        "prefix": "idpUnSelect",
+        "description": "idp取消选中行",
+        "body": [
+            "idp.control.get(\"${1:grid_main}\").unselect(${2:rowIndex});"
+        ]
+    },
+    "idp请求API": {
+        "scope": "javascript,typescript",
+        "prefix": "idpFetch",
+        "description": "idp请求API",
+        "body": [
+            "idp.loading();",
+            "idp.service.fetch('${1:/yourApi}', {",
+            "\t${2:key}: ''",
+            "}).done(function (data) {",
+            "\tidp.loaded();",
+            "\tif (data.success) {",
+            "\t\tleeUI.Success('成功')",
+            "\t} else {",
+            "\t\tidp.error(data.msg);",
+            "\t\treturn false;",
+            "\t}",
+            "});"
+        ]
+    },
+    "idp设置值": {
+        "scope": "javascript,typescript",
+        "prefix": "idpSetValue",
+        "description": "idp设置值",
+        "body": [
+            "idp.control.get(\"${1:controlId}\").setValue(${2:value});"
+        ]
     }
 }
